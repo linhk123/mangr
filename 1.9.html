@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Merge Arrays</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = [];
+    let c = [];
+    for (let i = 0; i < 10; i++) {
+        let so = parseInt(prompt('Nhập số thứ ' + (i + 1) + ' cho mảng a'));
+        a.push(so);
+    }
+    for (let i = 0; i < 10; i++) {
+        let so = parseInt(prompt('Nhập số thứ ' + (i + 1) + ' cho mảng b'));
+        b.push(so);
+    }
+    c = b.concat(a);
+    console.log("Mảng c sau khi nối b và a:", c);
+    alert("Mảng c đã được tạo và nối từ mảng b và mảng a. Kiểm tra console để xem kết quả.");
+</script>
+</body>
+</html>

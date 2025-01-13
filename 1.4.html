@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let sl = parseInt(prompt('Nhập số lượng phần tử của mảng:'))
+    for (let i = 0; i < sl; i++) {
+        let gt= parseInt(prompt('Nhập phần tử thứ '+(i+1)))
+        arr.push(gt);
+    }
+    arr.reverse();
+    document.write(arr);
+</script>
+</body>
+</html>

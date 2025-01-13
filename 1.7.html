@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+<script>
+  let arr = [];
+  let V;
+
+  for (let i = 0; i < 10; i++) {
+    let so = parseInt(prompt('Nhập số thứ ' + (i + 1)));
+    arr.push(so);
+  }
+
+  V = parseInt(prompt('Nhập số nguyên V'));
+
+  console.log("Mảng ban đầu:", arr);
+
+  let found = false;
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === V) {
+      found = true;
+
+      for (let j = i; j < arr.length - 1; j++) {
+        arr[j] = arr[j + 1];
+      }
+      arr[arr.length - 1] = 0;
+
+      break;
+    }
+  }
+  if (found) {
+    console.log("Mảng sau khi xoá V:", arr);
+    alert("Số V đã được xoá khỏi mảng.");
+  } else {
+    console.log("Mảng không có số V.");
+    alert("Số V không có trong mảng.");
+  }
+</script>
+</body>
+</html>
