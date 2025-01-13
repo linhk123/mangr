@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let chuoi = prompt("Nhập chuỗi của bạn:");
+  function demSoTu(str) {
+    let mangTu = str.trim().split(/\s+/);
+    return mangTu.length;
+  }
+  let soTu = demSoTu(chuoi);
+  alert("Số từ trong chuỗi của bạn là: " + soTu);
+</script>
+</body>
+</html>
