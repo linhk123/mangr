@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" placeholder="luy thua" id="luy">
+<button onclick="luythua()" value="Tinh"></button>
+<div id = 'result'></div>
+<script>
+    function luythua(){
+        let luy = parseInt(document.getElementById('luy').value);
+        dem=1;
+        for(let i=1;i<=luy;i++){
+            dem*=i;
+        }
+        document.getElementById('result').innerHTML=dem;
+    }
+</script>
+</body>
+</html>

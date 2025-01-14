@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type = "text" name = "name" id = "name" >
+<button type = "button" name = "button" id = "button" onclick="binhphuong()"></button>
+<div id = "result"> ket qua </div>
+<script>
+    function binhphuong(){
+        let  a = parseInt(document.getElementById("name").value);
+        b=Math.pow(a,2);
+        document.getElementById("result").innerHTML= 'bình phương của'+a+'la: '+b;
+    }
+</script>
+</body>
+</html>

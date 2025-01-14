@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tìm số nhỏ nhất</title>
+</head>
+<body>
+<input type="text" placeholder="Nhập vào các số, cách nhau bằng dấu cách" id="num">
+<button onclick="timSoNhoNhat()">Tìm số nhỏ nhất</button>
+<p id="result"></p>
+
+<script>
+  function timSoNhoNhat() {
+    let num = document.getElementById("num").value;
+    let numbers = num.split(' ').map(Number);
+    if (numbers.some(isNaN)) {
+      alert("Vui lòng nhập đúng định dạng số.");
+      return;
+    }
+    let minValue = Math.min(...numbers);
+    document.getElementById("result").innerText = "Số nhỏ nhất là: " + minValue;
+  }
+</script>
+</body>
+</html>

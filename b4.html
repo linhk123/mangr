@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Kiểm tra ký tự số</title>
+</head>
+<body>
+<input type="text" placeholder="Nhập ký tự" id="kitu">
+<button onclick="kiemTra()">Kiểm tra</button>
+<p id="result"></p>
+
+<script>
+  function kiemTra() {
+    let kitu = document.getElementById('kitu').value;
+    if (/^\d+$/.test(kitu)) {
+      document.getElementById('result').innerText = "Đây là ký tự số!";
+    } else {
+      document.getElementById('result').innerText = "Không phải ký tự số!";
+    }
+  }
+</script>
+</body>
+</html>

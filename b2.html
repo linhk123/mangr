@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type = "text" name = "name" id = "name"/>
+<input type = "button" name = "button" id = "button" onclick = "dientich()"/>
+<input type="button" name = "button" id = "button2" onclick = "chuvi()"/>
+<div id = "r"></div>
+<script>
+    function dientich(){
+        let r = parseInt(document.getElementById("name").value);
+        d = Math.PI * r * r ;
+        document.getElementById("r").innerHTML= ' dien tich: '+d;
+    }
+    function chuvi(){
+        let r = parseInt(document.getElementById("name").value);
+        c = Math.PI * 2 *r;
+        document.getElementById("r").innerHTML= ' chu vi: '+c;
+
+    }
+</script>
+</body>
+</html>
